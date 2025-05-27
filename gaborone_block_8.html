@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mr.House | BLOCK 8</title>
+   <link rel="icon" type="image/png" href="images/banner.pNG"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,350;1,350&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/banner.png" alt="logo">
+        </a>
+    </div>
+</header>
+
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fa fa-globe" aria-hidden="true"></i> Home</a></li>
+        
+        <li><a href="for_sale.html"><i class="fa fa-home" aria-hidden="true"></i> For Sale</a></li>
+        <li><a href="aboutus.html"><i class="fa fa-info" aria-hidden="true"></i> About Us</a></li>
+        <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+        <li><a href="feedback.html"><i class="fa fa-comment" aria-hidden="true"></i> Feedback</a></li>
+    </ul>
+
+</nav>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        document.body.classList.toggle("menu-open"); // Helps prevent layout shift
+    });
+});
+
+</script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>FIND IT IN GABORONE</h1>
+            <p>Securing your future with us, one property at a time</p>
+            
+        </div>
+    </section>
+     <section class="container">
+      <aside class="left-main-content">
+
+
+         <h3>Discover the Perfect Home</h3>
+         <hr>
+
+         <p>Whether you're looking to buy, rent, or invest, Mr.House connects you with the best properties in Botswana.
+            Browse thousands of listings, from cozy apartments to luxurious villas, and find the perfect place to call
+            home.</p>
+
+      </aside>
+      <main class="middle-main-content">
+         <h3>Why Choose Us?</h3>
+         <hr>
+         <p>
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i> Extensive Listings – Explore a wide range of properties
+            tailored to your needs.<br>
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i> Verified Listings – Trust only genuine and up-to-date
+            property ads.<br>
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i> Easy Search – Filter by location, price, size, and
+            amenities.<br>
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i> Expert Agents – Get assistance from trusted real estate
+            professionals.<br>
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i> Smart Alerts – Never miss a deal with personalized
+            property notifications.<br>
+         </p>
+
+      </main>
+      <aside class="right-main-content">
+         <h3>Looking to Sell Your Property?</h3>
+         <hr>
+         <p>List your property with us and reach thousands of potential buyers and renters!
+            <br><br>
+
+            🔹 Fast & Easy Listing Process<br>
+            🔹 High Visibility & Maximum Exposure<br>
+            🔹 Professional Photography & Marketing<br>
+         </p>
+
+</aside>
+
+        <div class="whatsapp-form-container">
+         <h2><i class="fa fa-whatsapp" aria-hidden="true"></i>Contact Us via WhatsApp</h2>
+         <p>Want to showcase your sell? Send us a message!</p>
+
+         <form id="whatsappForm">
+            <div class="form-group">
+               <label for="name">Your Name</label>
+               <input type="text" id="name" placeholder="Ex. Aobakwe" required>
+            </div>
+
+            <div class="form-group">
+               <label for="phone">Phone Number</label>
+               <input type="tel" id="phone" placeholder="+267" required>
+            </div>
+
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea id="message" placeholder="" required></textarea>
+            </div>
+
+            <button type="submit" class="whatsapp-btn">
+               <i class="fa fa-whatsapp" aria-hidden="true"></i> Send via WhatsApp
+            </button>
+         </form>
+
+
+         <script>
+            document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+               e.preventDefault();
+
+               const name = document.getElementById('name').value;
+               const phone = document.getElementById('phone').value;
+               const message = document.getElementById('message').value;
+
+               // Format the WhatsApp URL
+               const formattedPhone = phone.replace(/[^0-9+]/g, '');
+               const encodedMessage = encodeURIComponent(`Hi, my name is ${name}. ${message}`);
+
+               // Open WhatsApp with prefilled text
+               window.open(`https://wa.me/${formattedPhone}?text=${encodedMessage}`, '_blank');
+            });
+         </script>
+   </section>
+
+
+    <section class="container">
+        <div class="main-content2">
+            <!-- Main Content Section -->
+
+            <!--SELL-->
+            <!--house one -->
+            <div class="image-placeholder">
+                <div class="scroll-container">
+                    <img src="images/gabs_block_8/front_view.jpg" alt="front_view">
+                    <img src="images/gabs_block_8/front_view2.jpg" alt="view3">
+                    <img src="images/gabs_block_8/front_view3.jpg" alt="view3">
+                    <img src="images/gabs_block_8/bedroom.jpg" alt="view_1">
+                    <img src="images/gabs_block_8/backyard1.jpg" alt="front_view">
+                    <img src="images/gabs_block_8/bedroom.jpg" alt="view3">
+                    <img src="images/gabs_block_8/dining.jpg" alt="view3">
+                    <img src="images/gabs_block_8/garage.jpg" alt="view_1">
+                    <img src="images/gabs_block_8/kitchen.jpg" alt="view_1">
+                    <img src="images/gabs_block_8/work.jpg" alt="view_1">
+
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+    <section class="listing-container">
+        <div class="listing-content">
+            <div class="listing-header">
+                <h1>P 2 800 000</h1>
+                <h2>4 Bedroom House for Sale in Gaborone Block 8</h2>
+                <hr>
+
+
+            </div>
+            <div class="details-container">
+                <div class="icon-summary">
+                    <span><i class="fa fa-bed" aria-hidden="true"></i> Bedrooms: 4</span><br>
+                    <span><i class="fa fa-bath" aria-hidden="true"></i> Bathrooms: 3</span><br>
+                    <span><i class="fa fa-car" aria-hidden="true"></i> Garage: 2</span><br>
+                    <span><i class="fa fa-tree" aria-hidden="true"></i> Plot Size: 620m²</span><br>
+                </div>
+            </div>
+            <div class="chip">
+            <img src="images/contact_chip_imgs/IMG-20250524-WA0086.jpg" alt="Person" width="96" height="96">           
+            <a href="https://api.fa-whatsapp.com/tapiwa"><i class="fa fa-whatsapp" aria-hidden="true"></i> Cookie</a>
+         </div>
+        </div>
+
+        <div class="property-description">
+            <div>
+                <h3>Description</h3>
+                <hr>
+                <p>This stunning modern residence offers high-end living with 4 en-suite bedrooms,
+                    ideal for families seeking space, comfort, and entertainment.</p>
+
+              
+
+                <h3>Interior</h3>  <hr>
+
+                <p><strong>4 Spacious Bedrooms (All En-Suite):</strong> Including a master suite with walk-in closet &
+                    luxury bathroom</p>
+
+                <p><strong> Open-Plan Kitchen: </strong>Sleek design with top-end finishes, flowing into dining & lounge
+                    areas</p>
+
+                <p><strong> Scullery:</strong>Additional prep space & storage for convenience</p>
+
+                <p><strong>TV Lounge:</strong> Separate entertainment space</p>
+
+                <p><strong> Outdoor Oasis:</strong> Sparkling swimming pool in a private, landscaped garden.</p>
+
+                <p><strong>Security:</strong> Electric gate & perimeter fencing for peace of mind.</p>
+
+              
+
+                <h3>Exterior & Amenities:</h3>  <hr>
+                <p><strong>Double Garage:</strong>Secure automated parking</p>
+
+                <p><strong>Domestic Quarters :</strong>Self-contained for staff/guests.</p>
+                <p><strong> Swimming Pool :</strong>Sparkling private pool in landscaped garden.</p>
+
+                <p><strong> Entertainment Area :</strong>Perfect for outdoor dining & relaxation</p>
+
+
+            </div>
+           
+            <div class="additional-details">
+
+                <h3>Why Buy This Home?</h3> <hr>
+                <p>✓ Premium lifestyle with resort-style amenities</p>
+                <p>✓ Entertainer's dream – open-plan living + outdoor pool area</p>
+                <p>✓ Secure & private with automated garage & enclosed property</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    <footer>
+              <p>&copy; 2025 Mr. House. All rights reserved.Follow us on:
+
+            <a href="https://facebook.com/speedstarmotors" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/speedstarmotors" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://instagram.com/speedstarmotors" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://api.whatsapp.com/mr.house" target="_blank" class="fa fa-whatsapp"></a>
+        </p>
+    </footer>
+</body>
+
+</html>

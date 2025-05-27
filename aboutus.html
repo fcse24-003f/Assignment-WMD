@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mr.House | about us</title>
+   <link rel="icon" type="image/png" href="images/banner.pNG"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,350;1,350&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+ <header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/banner.png" alt="logo">
+        </a>
+    </div>
+</header>
+
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fa fa-globe" aria-hidden="true"></i> Home</a></li>
+        
+        <li><a href="for_sale.html"><i class="fa fa-home" aria-hidden="true"></i> For Sale</a></li>
+        <li><a href="aboutus.html"><i class="fa fa-info" aria-hidden="true"></i> About Us</a></li>
+        <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+        <li><a href="feedback.html"><i class="fa fa-comment" aria-hidden="true"></i> Feedback</a></li>
+    </ul>
+
+</nav>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        document.body.classList.toggle("menu-open"); // Helps prevent layout shift
+    });
+});
+
+</script>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Mr.House</h1>
+            <p>Securing your future with us, one property at a time</p>
+            <div class="options-container">
+                <button class="option-button">Explore more <i class="fa fa-arrow-circle-o-right"
+                        aria-hidden="true"></i></button>
+                <a href="property.html" class="map-link">
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+       <aside class="left-main-content">
+    <h3>Discover the Perfect Home</h3>
+    <hr>
+    <p>Whether you're looking to buy or rent, Mr. House connects you with the best properties in Botswana.
+        Browse thousands of listings, from cozy apartments to luxurious villas, and find the perfect place to call home.</p>
+    <p>We offer:
+    
+        <li>Verified property listings with real-time availability.</li>
+        <li>Advanced search filters (location, price, type, amenities).</li>
+        <li>Professional real estate agents ready to assist you.</li>
+        <li>Virtual tours & high-quality images for every listing.</li>
+         
+    </p>
+    
+</aside>
+
+<main class="middle-main-content">
+    <h3>Our Mission</h3>
+    <hr>
+    <p>Our mission is to connect buyers and sellers in a seamless and user-friendly environment.
+        We strive to provide the most accurate, up-to-date property listings and tools to help you make informed decisions.</p>
+    <p>At Mr. House, we believe in:
+    
+        <li>Transparency – Clear property details with no hidden fees.</li>
+        <li>Accessibility – Easy-to-navigate platform for all users.</li>
+        <li>Customer Support – Dedicated team available to assist you.</li>
+        <li>Innovation – Leveraging modern technology for better experiences.</li>
+    </p>
+</main>
+
+        
+
+
+
+        </aside>
+
+
+        
+    </section>
+      <footer>
+            <p>&copy; 2025 Mr. House. All rights reserved.Follow us on:
+
+         <a href="https://facebook.com/mr.house" target="_blank" class="fa fa-facebook"></a>
+         <a href="https://twitter.com/mr.house" target="_blank" class="fa fa-twitter"></a>
+         <a href="https://instagram.com/mr.house" target="_blank" class="fa fa-instagram"></a>
+         <a href="https://api.fa-whatsapp.com/mr.house" target="_blank" class="fa fa-whatsapp"></a>
+      </p>
+
+   </footer>
+</body>
+</html>
