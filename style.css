@@ -1149,7 +1149,8 @@ footer .fa-whatsapp {
     }
     
     .whatsapp-form-container {
-        max-width: 100%;
+         flex-direction: column;
+        width: 100%;
         padding: 15px;
     }
 
@@ -1188,7 +1189,7 @@ footer .fa-whatsapp {
     .logo,
     .left-sidebar,
     .left-main-content,
-    .hero-content .middle-main-content,
+    .hero-content, .middle-main-content,
     .right-main-content,
     .property-description,
     .main-content,
