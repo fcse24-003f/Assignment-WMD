@@ -1,4 +1,5 @@
 body {
+    display: flex;
     padding: 0;
     margin: 0;
     flex-direction: column;
@@ -8,51 +9,40 @@ body {
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
-
 }
-
 
 header {
     display: flex;
     justify-content: center;
     background-color: #0e76a8;
     color: #fff;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 0;
-    padding-bottom: 10px;
+    padding: 10px 15px 10px 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
-
 }
 
 .logo h1 {
     margin: 0;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     text-align: center;
-
 }
 
 .logo img {
     width: 100%;
     height: auto;
     display: block;
-    height: 10vh;
+    max-height: 10vh;
 }
-
-
 
 /* Navigation bar */
 .menu-toggle {
     display: none;
-    /* Hidden by default */
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Navigation bar */
 ul {
     list-style: none;
     margin: 0;
@@ -61,7 +51,6 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* Allows items to wrap on smaller screens */
 }
 
 li {
@@ -87,10 +76,10 @@ li a:active {
     background-color: #04AA6D;
 }
 
-
 .hero {
     background-image: url(images/background.jpeg);
-    background-size: 100%;
+    background-size: cover;
+    /* Changed from 100% to 'cover' for better responsiveness */
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -99,7 +88,6 @@ li a:active {
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 .hero:before {
@@ -108,7 +96,8 @@ li a:active {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 100%;
+    /* Fixed inconsistent height */
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
@@ -126,15 +115,13 @@ li a:active {
 }
 
 .hero-content p {
-
     font-size: 1.75rem;
 }
 
 .hero-content .option-button {
-
-    cursor: pointer black;
+    cursor: pointer;
+    /* Fixed invalid value */
 }
-
 
 .options-container {
     display: flex;
@@ -147,13 +134,12 @@ li a:active {
     padding: 10px 20px;
     background-color: #fff;
     color: #000;
-    transition: background-color 1.2s ease, transform 0.8s ease-in;
-    border-radius: 5px 0px;
-    box-shadow: 5px 5px 2.5px 0px rgba(0, 0, 0, 0.25) inset;
+    transition: background-color 0.8s ease, transform 0.5s ease-in;
+    /* Reduced transition time */
+    border-radius: 5px;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.25) inset;
     width: 90px;
     text-align: center;
-
-
 }
 
 .option-button:hover {
@@ -161,9 +147,7 @@ li a:active {
     color: white;
 }
 
-
-
-
+/* Content containers */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -174,102 +158,54 @@ li a:active {
     max-width: 1480px;
 }
 
-.main-content {
-    flex: 3 1 700px;
-    background-color: white;
-    border-radius: 10px 0;
-    box-shadow: 5px 5px 2.5px 1px rgba(0, 0, 0, 0.15);
+.main-content,
+.left-main-content,
+.middle-main-content,
+.right-main-content {
+    flex: 3 1 300px;
+    /* Standardized flex properties for consistency */
+    border-radius: 10px;
+    box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    width: 25%;
+    width: 100%;
+    /* Improved responsiveness */
     border: 1px solid #ddd;
 }
-
-.main-content h3 {
-    font-size: clamp(1rem, 4vw, 2rem);
-    text-align: center;
-}
-
-.main-content p {
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-
-
 
 .left-main-content {
-    flex: 3 1 200px;
     background-color: #0e77a8d5;
     color: #fff;
-    border-radius: 10px 0;
-    box-shadow: 5px 5px 2.5px 1px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    width: 350px;
-    margin: 2px;
-    border: 1px solid #ddd;
-
-}
-
-.left-main-content h3 {
-    font-size: clamp(1rem, 4vw, 2rem);
-    text-align: center;
-}
-
-.left-main-content p {
-    line-height: 1.6;
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 20px;
 }
 
 .middle-main-content {
-    flex: 3 1 200px;
     background-color: #0e77a8ac;
     color: #fff;
-    border-radius: 10px 0;
-    box-shadow: 5px 5px 2.5px 1px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    width: 350px;
-    margin: 2px;
-    border: 1px solid #ddd;
-
-}
-
-.middle-main-content h3 {
-    font-size: clamp(1rem, 4vw, 2rem);
-    text-align: center;
-}
-
-.middle-main-content p {
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: justify;
 }
 
 .right-main-content {
-    flex: 3 1 200px;
     background-color: #0e77a88b;
     color: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 2.5px 1px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    width: 350px;
-    border: 1px solid #ddd;
 }
 
+.main-content h3,
+.left-main-content h3,
+.middle-main-content h3,
 .right-main-content h3 {
     font-size: clamp(1rem, 4vw, 2rem);
     text-align: center;
 }
 
+.main-content p,
+.left-main-content p,
+.middle-main-content p,
 .right-main-content p {
     line-height: 1.6;
-    text-align: justify;
     font-size: 1rem;
     margin-bottom: 20px;
+    text-align: justify;
 }
+
+
 
 /* Card Container */
 .card-container {
@@ -950,12 +886,13 @@ footer .fa-whatsapp {
     body {
         flex-direction: column;
         text-align: center;
-
+        width: 100%;
     }
 
     header {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     ul {
@@ -988,6 +925,7 @@ footer .fa-whatsapp {
     .whatsapp-form-container {
         flex-direction: column;
         text-align: center;
+        width: 95%;
 
 
 
@@ -1113,7 +1051,7 @@ footer .fa-whatsapp {
         float: left;
         margin: 0 10px 0 -25px;
         height: 50px;
-        width:40px;
+        width: 0px;
         border-radius: 50%;
     }
 
@@ -1123,7 +1061,7 @@ footer .fa-whatsapp {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     body {
         font-size: 14px;
         background-color: #f4f4f4;
@@ -1147,24 +1085,6 @@ footer .fa-whatsapp {
         width: 100%;
         text-align: center;
     }
-    
-    .whatsapp-form-container {
-         flex-direction: column;
-        width: 100%;
-        padding: 15px;
-    }
-
-    input, textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .whatsapp-btn {
-        font-size: 14px;
-        padding: 10px;
-        width: 100%;
-    }
-
 
     .menu-toggle {
         display: block;
@@ -1189,7 +1109,7 @@ footer .fa-whatsapp {
     .logo,
     .left-sidebar,
     .left-main-content,
-    .hero-content, .middle-main-content,
+    .hero-content .middle-main-content,
     .right-main-content,
     .property-description,
     .main-content,
@@ -1213,7 +1133,7 @@ footer .fa-whatsapp {
     .container {
         margin: 0;
         flex-direction: column;
-        width: fit-content;
+        width: 100%;
     }
 
     .listing-container,
@@ -1223,11 +1143,12 @@ footer .fa-whatsapp {
     .additional-details,
 
     .card-container,
-    .card,  .whatsapp-form-container {
+    .card,
+    .whatsapp-form-container {
         flex-direction: column;
         text-align: center;
         margin: 0;
-
+        width: 95%;
     }
 
     aside,
