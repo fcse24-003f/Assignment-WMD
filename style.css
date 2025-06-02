@@ -1222,7 +1222,7 @@ footer .fa-whatsapp {
     .additional-details,
 
     .card-container,
-    .card .whatsapp-form-container {
+    .card,  .whatsapp-form-container {
         flex-direction: column;
         text-align: center;
         margin: 0;
